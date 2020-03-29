@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Cidade de Palmas</title>
+	<meta charset="utf-8">	
+	<meta name="description" content="Guia de lugares para lazer, come e hospedar em Palmas-TO.>
+    <meta name="keywords" content="palmas, lazer, praia, cachoeira, ilha, canela,restaurantes, hoteis.">
+    <meta name="author" content="Lucas Carvalho">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+<style type="text/css">
+body{
+	margin:0;
+	font-family: Helvetica, Arial;
+  	
+  	height: auto; 	
+  	background-color: #ADD8E6;
+
+  	max-width: 1200px;
+  	margin: 0 auto;
+  	width: 85%;
+}
+
+h1, h2, h3, h4{
+	margin: 0;
+	font-family: 'Amatic SC' ;
+}
+#cabecalho{
+	height: 150px;
+  background-image: url("images/logo.jpg");
+}
+#menu{
+	position: sticky;/*fixar o menu no topo ao rolar a pagina*/
+  	top: 0;
+
+}
+#menu ul{
+  	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	background-color: #333;
+  	
+}
+#menu li{
+	
+	float: left;
+	width: 20%;
+	
+}
+#menu li a{
+	display: block;
+	color: #ffffff;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+#menu li a:hover{
+	background-color: #111;
+}
+#menu li a:active{
+	background-color: green;
+}
+#conteudo {
+  background-color: #F2E9EB;
+  width:80%;
+  float:left;
+}
+#anuncio{
+	background-color: #000000;
+	width: 20%;
+	height: auto;
+	float: right;
+}
+#parceiros{
+	height: 150px;
+	text-align: center;
+	color: #ffffff;
+	line-height: 150px;
+}
+#parceiros a img{
+	width: 96%;
+	height: 96%;
+	padding: 2px;
+	
+}
+#rodape {
+  width: auto;
+  height:auto;
+  background-color: #333;
+  text-align: center;
+  padding: 8px;
+  color: #ffffff;
+  clear: both;
+}
+#inicio h2{
+	text-align: center;
+	padding-top: 10px;
+	color: #2E8B57;
+}
+#inicio p{
+	text-align: justify;
+	padding: 10px;
+	text-indent: 40px;
+}
+#inicio img{
+	height: 220px;
+	float: left;
+	padding: 10px;
+}
+#lazer h2{
+	text-align: center;
+	padding-top: 10px;
+	color: #2E8B57;
+}
+#lazer h3{
+	padding-left: 20px;
+	color: #B8860B;
+}
+#lazer p{
+	text-align: justify;
+	padding: 10px;
+	text-indent: 40px;
+	width: 97.5%;
+	
+}
+#lazer img{
+	width: 97.5%;
+	padding: 10px;
+	float: left;
+}
+#lazer a{
+	text-decoration: none;
+	color: #8B4513;
+}
+#lazer a:hover{
+	color: red;
+	font-size: 15px;
+
+}
+#comer h2{
+	text-align: center;
+	padding-top: 10px;
+	color: #2E8B57;
+}
+#comer h3{
+	padding-left: 20px;
+	color: #B8860B;
+}
+#comer address{
+	text-align: left;
+	padding-left:20px;
+	font-size: 14px;
+	
+}
+#hospedar h2{
+	text-align: center;
+	padding-top: 10px;
+	color: #2E8B57;
+}
+#hospedar h3{
+	padding-left: 20px;
+	color: #B8860B;
+}
+#hospedar address{
+	text-align: left;
+	padding-left:20px;
+	font-size: 14px;
+}
+#sobre h2{
+	text-align: center;
+	padding-top: 10px;
+	color: #2E8B57;
+}
+.contato {
+  width: 70%;
+  font-family: "Arial", Times, serif;
+  padding-left: 10px;
+}
+
+.contatoinput {
+  width: 70%;
+  color: #292929;
+  font-size: 15px;
+  background-color: #E9E9E9;
+  border: 1px solid #E9E9E9;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  height: 40px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  text-indent: 20px;
+}
+
+.textoarea {
+  width: 100%;
+  color: #292929;
+  font-size: 15px;
+  background-color: #E9E9E9;
+  border: 1px solid #E9E9E9;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  height: 200px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  text-indent: 20px;
+  padding-top: 16px;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: "Arial", Times, serif;
+}
+
+.botao {
+  width: 15%;
+  font-size: 15px;
+  border-radius: 4px;
+  color: #fff;
+  height: 30px;
+  opacity: .8;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background: #B22222;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #500707;
+  border-right: 1px solid #500707;
+  transition: 1s;
+}
+
+.botao:hover {
+  opacity: 1;
+}
+
+	</style>
+</head>
+<body>
+<header id="cabecalho">
+</header>
+<nav id=menu>
+<ul>
+	<li><a href="index.html">Inicio</a></li>
+	<li><a href="#lazerpalmas">Lazer</a></li>
+	<li><a href="#comerpalmas">Onde Comer</a></li>
+	<li><a href="#hospedarpalmas">Onde Hospedar</a></li>
+	<li><a href="#sobre">Sobre</a></li>
+</ul>
+</nav>
+<main>
+<div id="conteudo">
+<section>
+<article id="inicio">
+	<h2><strong>Cidade de Palmas</strong></h2>
+	<img src="images/palmas.jpg" alt="Cidade de Palmas">
+	<p>
+	Palmas é um município brasileiro, sendo a capital e também a maior cidade do estado do Tocantins. A cidade foi fundada em 20 de maio de 1989, logo após a criação do Tocantins pela Constituição de 1988. Antes desta data, Palmas foi planejada inicialmente pelos arquitetos Luiz Fernando Cruvinel Teixeira e Walfredo Antunes de Oliveira Filho, sendo que a partir daí, a cidade começou a ser construída pelos trabalhadores que vieram do interior do Tocantins e de vários outros estados do país. </p>
+	<p>
+	Entretanto, somente a partir do dia 1° de janeiro de 1990, é que Palmas passou a ser a capital definitiva do estado, já que antes a cidade ainda não possuía condições físicas de sediar o governo estadual, que estava alocado temporariamente no município vizinho de Miracema do Tocantins.</p>
+</article>
+<br id="lazerpalmas">
+<br>
+<article id="lazer">
+	<h2>Lugares para lazer</h2>
+	<h3>Praias</h3>
+	<ul>
+		<li><a href="#graciosa">Praia da Graciosa</a></li>
+		<li><a href="#prata">Praia do Prata</a></li>
+		<li><a href="#arnos">Praia das Arnos</a></li>
+		<li><a href="#canela">Ilha Canela</a></li>
+		<li><a href="#cesamar">Parque Cesamar</a></li>
+		<li><a href="#taquarucu">Taquaruçu</a></li>
+	</ul>
+	<br id="graciosa">
+	<br>
+	<br>
+	<h3>Praia da Graciosa</h3>
+		<img src="images/graciosa.jpg" alt="Praia da Graciosa">
+		<p>Praia Graciosa que é muito utilizada para realizar eventos culturais, de lazer, esportivos e náuticos. A praia dispõe de uma extensa orla dotada de boa estrutura como banheiros, quadras de esportes, parques infantis, área de camping, posto policial, marina com atracadouro, além da oferta serviços de bares e restaurantes</p>
+	<br id="prata">
+	<br>
+	<br>
+	<h3>Praia do Prata</h3>
+		<img src="images/prata.jpg" alt="Praia do Prata">
+		<p>Praia do Prata é parada obrigatória para quem quer aproveitar um ambiente familiar às margens do lago e se deliciar com a boa gastronomia tocantinense. A Praia, que recebe turistas e visitantes desde julho de 2003, é a mais frequentada da cidade, principalmente nos finais de semana, e está localizada a nove quilômetros da Praça dos Girassóis.
+		</p>
+		<p>
+		Sua infraestrutura dispõe de estacionamento, banheiros, telefones, quadra para a prática de esportes, área para acampamento, serviços de restaurantes e bares e barracas de palha distribuídas na orla do lago, que protegem os visitantes do calor do sol. O local também é muito utilizado como ponto de realização de eventos culturais e esportivos de médio porte, sendo uma ótima opção de descontração e lazer.</p>
+		<br id="arnos">
+		<br>
+		<br>
+		<h3>Praia das Arnos</h3>
+		<img src="images/arnos.jpg" alt="Praia das Arnos">
+		<p>Praia das Arnos, localizada na região norte de palmas conta com bares, restaurantes e estacionamento.</p>
+		<br id="canela">
+		<br>
+		<br>
+		<h3>Ilha Canela</h3>
+		<img src="images/canela.jpg" alt="Ilha do Canela">
+		<p>Banhos tranquilos e uma encantadora paisagem são as principais atrações da Ilha Canela, uma grande praia artificial, com uma extensão de 45 mil m², distante 3 Km da margem direita do Lago de Palmas. É uma propriedade particular, que dispõe de área para camping, atracadouro para grandes embarcações, salva-vidas,  posto de bombeiros, restaurante e três quiosques. Para banho, a área da ilha contempla 9 mil m². </p>
+		<br id="cesamar">
+		<br>
+		<br>
+		<h3>Parque Cesamar</h3>
+		<img src="images/cesamar.jpg" alt="Parque Cesamar">
+		<p>Criado em 1998, o Parque Cesamar proporciona à população de Palmas um espaço de convívio para a melhoria da qualidade de vida. Possui pista para caminhadas, equipamentos para a prática esportiva e espaços de diversão para crianças e adultos. Ainda no parque fica a Casa Suçuapara, que foi sede da primeira Prefeitura e Câmara Municipal de Palmas. Hoje, no local, funciona um museu - a Casa da Cultura - que abriga o acervo histórico de Palmas como fotografias, documentos e mapas que retratam vários momentos históricos da capital. A Casa abriga também a Associação dos Amigos do Patrimônio Cultural de Palmas (AAPCP) e a Academia Palmense de Letras (APL).</p>
+		<br id="taquarucu">
+		<br>
+		<br>
+		<h3>Taquaruçu</h3>
+		<img src="images/cachoeira.jpg" alt="Taquaruçu">
+		<p> Apenas 32 km do centro de Palmas existe um lugarzinho aconchegante, de gente hospitaleira, cheio de cachoeiras de águas frias, que tem atraído a cada dia mais pessoas: o distrito de Taquaruçu. O nome indígena significa Taboca Grande e foi dado originalmente ao rio que banha a região.  É um dos povoados mais antigos do Tocantins, onde havia grande quantidade de propriedades rurais e surgiu a partir de um ponto de parada de tropeiros que faziam o trajeto entre Porto Nacional (cidade a 60 km de Palmas, tida como o berço histórico do Tocantins) e outros municípios.</p>
+		<p>
+		A tranquilidade de Taquaruçu remete às pequenas cidades do interior do Brasil e as cachoeiras e clima ameno contrastam com as altas temperaturas da cidade. As grandes propriedades foram divididas e hoje o distrito abriga uma infinidade de chácaras e moradias de fins de semana, além de pousadas.
+		</p>
+		<p>
+		Para muitos moradores de Palmas, Taquaruçu é uma espécie de refúgio, para onde vão em busca de recarregar as energias. Mas o lugar também é perfeito para quem quer adrenalina. São 82 cachoeiras catalogadas, paredões, grutas, córregos e mirantes, num local onde o turista pode praticar atividades como rapel, tirolesa, trilhas - tanto a pé quanto de bicicleta - e se refrescar nas águas.
+		</p>
+		<p>
+		Entre os principais atrativos, estão a Cachoeira da Roncadeira - com 70 metros de altura; a Cachoeira Escorrega Macaco, a Cachoeira do Evilson, Cachoeira do Vale do Vai Quem Quer, Cachoeira de Taquaruçu, Cachoeira do Sambaiba, Cachoeira Raizana,  Cachoeira Pequena, Cachoeira Rappel, Cachoeira Caverna, Corredeira Rio São João e o  Balneário Natureza.</p>
+</article>
+<br id="comerpalmas">
+<br>
+<article id="comer">
+	<h2>Onde Comer</h2>
+	<br id="fogaoalenha">
+	<br>
+	<br>
+	<h3><strong>Restaurante Fogao a Lenha - Brasileiros cozinha Mineira</strong></h3>
+	<address>103 Sul, 01 - Bairro: Plano Diretor Sul - Palmas - TO
+	<br>Fone: (63) 3215-5868</address>
+	<br id="sergios">
+	<br>
+	<br>
+	<h3><strong>Churrascaria Sergio's</strong></h3>
+	<address>104 Sul Rua Se Onze, s/n lote 15 - Bairro: Plano Diretor Sul - Palmas - TO - CEP: 77020-026
+	(<br>Fone: (63) 3215-3490</address>
+	<br id="portaldosul">
+	<br>
+	<br>
+	<h3><strong>Churrascaria Portal do Sul - Churrascaria Clássica e Rodízio</strong></h3>
+	<address>
+	102 Norte Avenida Joaquim Teotônio Segurado, s/n lote 4
+	Bairro: Plano Diretor Norte - Palmas - TO - CEP: 77006-002
+	<br>Fone: (63) 3225-8744</address>
+	<br id="nelsons">
+	<br>
+	<br>
+	<h3><strong>Nelson's Churrascaria - Churrascaria Clássica e Rodízio</strong></h3>
+	<address>
+	601 Sul Avenida Joaquim Teotônio Segurado, s/n lote 6 conj. 01 Bairro: Plano Diretor Sul - Palmas - TO - CEP: 77016-330
+	<br>Fone: (63) 3216-1670</address>
+	<br>
+</article>
+<br id="hospedarpalmas">
+<br>
+<article id="hospedar">
+	<h2>Onde Hospedar</h2>
+	<h3><strong>Hotel Lago da Palma</strong></h3>
+	<address>
+	103 Sul Avenida Juscelino Kubitschek, 161 lote 20 conjunto 1
+	Bairro: Plano Diretor Sul - Palmas - TO
+	<br>Fone: (63) 3215-2707</address>
+	<br>
+	<h3><strong>Hotel Munart</strong></h3>
+	<address>
+	104 Sul Avenida Lo Três, 53 lote 53 - Bairro: Plano Diretor Sul - Palmas - TO
+	<br>Fone: (63) 3219-3500</address>
+	<br>
+	<h3><strong>Hotel Rio do Sono</strong></h3>
+	<address>
+	101 Sul Avenida Joaquim Teotônio Segurado, s/n - Bairro: Plano Diretor Sul - Palmas - TO
+	<br>Fone: (63) 3219-6800</address>
+	<br>
+	<h3><strong>Hotel Casa Grande</strong></h3>
+	<address>
+	201 Sul Avenida Joaquim Teotônio Segurado, s/n lote 1 conjunto 1 - Bairro: Centro - Palmas - TO
+	<br>Fone: (63) 3216-8000</address>
+	<br>
+</article>
+<article id="sobre">
+	<h2>Mais Informações</h2>
+	<br>
+	<form action="#" class="contato" method="post" tabindex="1">  
+     <input type="text" class="contatoinput" name="nome" placeholder="Nome" required />  
+     <input type="email" class="contatoinput" name="email" placeholder="Email" required />  
+     <input type="tel" class="contatoinput" name="tel" placeholder="Telefone" />  
+     <textarea class="textoarea" name="conteudo" placeholder="Deixe uma mensagem" required></textarea>  
+     <button type="submit" class="botao">Enviar</button>  
+  </form>
+	
+</article>
+</section>
+</div>
+<div id="anuncio">
+<div id="parceiros">
+<a href="http://reginaaires.com.br" target="_blank"><img src="images/reginaaires.png"></a>
+</div>
+<div id="parceiros">
+<a href="#portaldosul"><img src="images/portaldosul.jpeg" alt="Curascaria Portal do Sul"></a>
+</div>
+<div id="parceiros">
+<a href="#fogaoalenha"><img src="images/fogaoalenha.jpeg" alt="Restaurante Fogao a Lenha"></a>
+</div>
+<div id="parceiros">
+<a href="#sergios"><img src="images/sergios.jpg" alt="Curascaria Sergio's"></a>
+</div>
+<div id="parceiros">
+<a href="#nelsons"><img src="images/nelsons.jpeg" alt="Curascaria Nelson's"></a>
+</div>
+<div id="parceiros">
+Anuncie Aqui.
+</div>
+<div id="parceiros">
+Anuncie Aqui.
+</div>
+<div id="parceiros">
+Anuncie Aqui.
+</div>
+<div id="parceiros">
+Anuncie Aqui.
+</div>
+<div id="parceiros">
+Anuncie Aqui.
+</div>
+<div id="parceiros">
+Anuncie Aqui.
+</div>
+<div id="parceiros">
+Anuncie Aqui.
+</div>
+<div id="parceiros">
+Anuncie Aqui.
+</div>
+<div id="parceiros">
+Anuncie Aqui.
+</div>
+</div>
+</main>
+<footer id="rodape">
+Ⓒ Cidade de Palmas © 2020 | All Rights Reserved.
+</footer>
+</body>
+</html>
